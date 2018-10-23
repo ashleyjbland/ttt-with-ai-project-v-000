@@ -12,13 +12,13 @@ end
 def game_play
   if @input == "0"
     Game.new(player_1=Players::Computer.new("X"), player_2=Players::Computer.new("O"))
-    game.play
+
   elsif @input == "1"
     Game.new(player_2=Players::Computer.new("O"))
-    game.play
+
   elsif @input == "2"
     Game.new
-    game.play
+  
   else
     intro
   end
