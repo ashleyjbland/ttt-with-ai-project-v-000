@@ -10,11 +10,11 @@ def intro
 end
 
 def game_play
-  if input == 0
+  if @input == 0
     Game.new(player_1=Players::Computer.new("X"), player_2=Players::Computer.new("O"))
-  elsif input == 1
+  elsif @input == 1
     Game.new(player_2=Players::Computer.new("O"))
-  elsif input == 2
+  elsif @input == 2
     Game.new
   else
     intro
@@ -22,6 +22,5 @@ def game_play
 end
 
 intro
-input = gets.strip
-
-
+@input = gets.strip
+game_play
