@@ -15,7 +15,3 @@ if input == 1
   Game.new(player_2=Players::Computer.new("O"))
 if input == 2
   Game.new
-
-
-board.reset!
-game.play
