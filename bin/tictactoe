@@ -13,10 +13,10 @@ input = gets.strip
 
 if input == 0
   Game.new(player_1=Players::Computer.new("X"), player_2=Players::Computer.new("O"))
-if input == 1
+elsif input == 1
   Game.new(player_2=Players::Computer.new("O"))
-if input == 2
+elsif input == 2
   Game.new
-  
+
 end
 end
