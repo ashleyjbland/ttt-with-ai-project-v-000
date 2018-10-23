@@ -17,6 +17,7 @@ elsif input == 1
   Game.new(player_2=Players::Computer.new("O"))
 elsif input == 2
   Game.new
-else 
+else
+  intro
 
 end
