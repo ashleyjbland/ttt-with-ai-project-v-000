@@ -2,7 +2,7 @@
 
 require_relative '../config/environment'
 
-def start
+
 
 puts "Welcome to Tic Tac Toe!"
 puts "Enter 0 for a game between AI's"
@@ -17,5 +17,6 @@ if input == 1
   Game.new(player_2=Players::Computer.new("O"))
 if input == 2
   Game.new
-
+  
+end
 end
