@@ -2,6 +2,8 @@
 
 require_relative '../config/environment'
 
+def start
+
 puts "Welcome to Tic Tac Toe!"
 puts "Enter 0 for a game between AI's"
 puts "Enter 1 for a game between you and AI"
