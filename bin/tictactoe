@@ -19,4 +19,4 @@ elsif input == 2
   Game.new
 
 end
-end
+
