@@ -9,15 +9,19 @@ def intro
   puts "Enter 2 for a game between you and your real life friend sitting next to you"
 end
 
+def game_play
+  if input == 0
+    Game.new(player_1=Players::Computer.new("X"), player_2=Players::Computer.new("O"))
+  elsif input == 1
+    Game.new(player_2=Players::Computer.new("O"))
+  elsif input == 2
+    Game.new
+  else
+    intro
+  end
+end
+
+intro
 input = gets.strip
 
-if input == 0
-  Game.new(player_1=Players::Computer.new("X"), player_2=Players::Computer.new("O"))
-elsif input == 1
-  Game.new(player_2=Players::Computer.new("O"))
-elsif input == 2
-  Game.new
-else
-  intro
 
-end
