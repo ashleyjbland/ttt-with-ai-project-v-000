@@ -14,7 +14,7 @@ def game_play
     game = Game.new(player_1=Players::Computer.new("X"), player_2=Players::Computer.new("O"))
     game.play
   elsif @input == "1"
-    game = Game.new(player_2=Players::Computer.new("O"))
+    game = Game.new(player_1=Players::Human.new("X"), player_2=Players::Computer.new("O"))
     game.play
   elsif @input == "2"
     game = Game.new
