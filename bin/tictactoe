@@ -2,10 +2,12 @@
 
 require_relative '../config/environment'
 
-puts "Welcome to Tic Tac Toe!"
-puts "Enter 0 for a game between AI's"
-puts "Enter 1 for a game between you and AI"
-puts "Enter 2 for a game between you and your real life friend sitting next to you"
+def intro
+  puts "Welcome to Tic Tac Toe!"
+  puts "Enter 0 for a game between AI's"
+  puts "Enter 1 for a game between you and AI"
+  puts "Enter 2 for a game between you and your real life friend sitting next to you"
+end
 
 input = gets.strip
 
@@ -15,5 +17,6 @@ elsif input == 1
   Game.new(player_2=Players::Computer.new("O"))
 elsif input == 2
   Game.new
+else 
 
 end
